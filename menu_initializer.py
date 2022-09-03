@@ -2,6 +2,8 @@ import sys
 
 from PyQt5.QtGui import QIcon
 from PyQt5.QtWidgets import QAction
+
+from deter_calc import DET_TblwWeightCalc
 from screen_base import ScreenBase
 
 from common import *
@@ -53,6 +55,15 @@ class MenuInit():
 
     def menu_calc(self):
         sub_menus = []
+        # 계산
+        self.scr_calc_windows = []
+        def show_calc():
+            self.scr_calc_windows.append(ScreenBase(DET_TblwWeightCalc()).base_window)
+            self.scr_calc_windows[-1].show()
+        sub_menus.append(action_init(self, '테이블 가중치 계산'
+                                     , show_calc
+                                     , ''))
+        # 계산 [END]
         # 에코
         self.scr_echo_windows = []
         def show_echo():

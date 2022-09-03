@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>679</width>
+    <height>667</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <property name="spacing">
+        <number>3</number>
+       </property>
+       <item>
+        <widget class="QLabel" name="lbl_input">
+         <property name="styleSheet">
+          <string notr="true">QLabel {
+	border:1px solid rgb(84, 84, 85);
+	background-color:FloralWhite;
+	padding:1px;
+}</string>
+         </property>
+         <property name="text">
+          <string>입력 문자열</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPlainTextEdit" name="pte_input">
+         <property name="styleSheet">
+          <string notr="true">QPlainTextEdit {
+	border:1px solid rgb(84, 84, 85);
+	background-color:LemonChiffon;
+	padding:3px;
+}</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <property name="spacing">
+        <number>3</number>
+       </property>
+       <item>
+        <widget class="QLabel" name="lbl_output">
+         <property name="styleSheet">
+          <string notr="true">QLabel {
+	border:1px solid rgb(84, 84, 85);
+	background-color:FloralWhite;
+	padding:1px;
+}</string>
+         </property>
+         <property name="text">
+          <string>1차 출력</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QTableWidget" name="tblw_chart">
+         <column>
+          <property name="text">
+           <string>항목명</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>항목수량</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>가중치 (n배)</string>
+          </property>
+          <property name="foreground">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>255</red>
+             <green>0</green>
+             <blue>0</blue>
+            </color>
+           </brush>
+          </property>
+         </column>
+        </widget>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_3">
+         <property name="spacing">
+          <number>3</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="lbl_output_2">
+           <property name="styleSheet">
+            <string notr="true">QLabel {
+	border:1px solid rgb(84, 84, 85);
+	background-color:FloralWhite;
+	padding:1px;
+}</string>
+           </property>
+           <property name="text">
+            <string>2차 출력</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_2">
+           <property name="spacing">
+            <number>3</number>
+           </property>
+           <item>
+            <widget class="QLabel" name="lbl_output_3">
+             <property name="styleSheet">
+              <string notr="true">QLabel {
+	border:1px solid rgb(84, 84, 85);
+	background-color:FloralWhite;
+	padding:1px;
+}</string>
+             </property>
+             <property name="text">
+              <string>순수수량</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="lbl_pure_qty">
+             <property name="styleSheet">
+              <string notr="true">QLabel {
+	border:1px solid rgb(84, 84, 85);
+	background-color:white;
+	padding:1px;
+}</string>
+             </property>
+             <property name="text">
+              <string>0</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="lbl_output_4">
+             <property name="styleSheet">
+              <string notr="true">QLabel {
+	border:1px solid rgb(84, 84, 85);
+	background-color:FloralWhite;
+	padding:1px;
+}</string>
+             </property>
+             <property name="text">
+              <string>계산수량</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="lbl_calc_qty">
+             <property name="styleSheet">
+              <string notr="true">QLabel {
+	border:1px solid rgb(84, 84, 85);
+	background-color:white;
+	padding:1px;
+}</string>
+             </property>
+             <property name="text">
+              <string>0</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
